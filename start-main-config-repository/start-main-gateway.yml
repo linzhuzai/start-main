@@ -6,4 +6,4 @@ eureka:
 #      user.password: ${security.user.password}
   client:
     service-url:
-      defaultZone: http://localhost:9005/eureka/
+      defaultZone: http://localhost:9000/eureka/
