@@ -10,3 +10,17 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9000/eureka/
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    start-main-customerservice:
+      path: /customer/**
+      stripPrefix: false
+      sensitiveHeaders:
+#    svca-service:
+#      path: /svca/**
+#      sensitiveHeaders:
+#    svcb-service:
+#      path: /svcb/**
+#      sensitiveHeaders:
